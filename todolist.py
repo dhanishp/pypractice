@@ -2,14 +2,14 @@
 todolist = ["homework","chores","dinner"]
 
 def checktodo():
-    print "\nTo-do:"
+    print ("\nTo-do:")
     for x in todolist:
         print(x)
         
 def addtodo():
     add = input("What do you want to add?")
     todolist.append(add)
-    print "\nTo-do:"
+    print("\nTo-do:")
     for x in todolist:
         print(x)
        
@@ -17,7 +17,7 @@ def removetodo():
     remove = input("What do you want to remove?")
 
     todolist.remove(remove)
-    print "\nTo-do:"
+    print("\nTo-do:")
     for x in todolist:
         print(x)
        
@@ -28,7 +28,8 @@ while i < 3:
     print ("\nMake sure to include all input into the program within quotation marks ")
     command = input ("\nWhat would you like to do?\n")
 
-    if command == "print":
+    if command == "check":
+
         checktodo()
 
     elif command == "add":
